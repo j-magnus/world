@@ -1,0 +1,344 @@
+.eb-garamond-font {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+body{
+    font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    color: rgb(70,70,70);
+}
+
+.wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* MASTER STYLING */
+
+a {
+    color: rgb(70, 70, 70);
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: -0.025rem;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2.5rem;
+    letter-spacing: -0.025rem;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 720px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: -0.025rem;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.rule {
+    display: block;
+    width: 1fr;
+    height: 1px;
+    background-color: rgb(235, 235, 235);
+}
+
+/* BUTTONS */
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-button {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    color: rgb(175,175,175);
+    background-color: transparent;
+    border: 1px solid rgb(235, 235, 235);
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* COVER */
+
+.cover {
+    width: 90vw;
+    height: 80vh;
+    padding: 10px;
+    margin: 10vh auto;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+
+.cover-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.cover-date {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    flex-basis: fit-content;
+}
+
+.cover-title {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 35px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.cover-author {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    flex-basis: fit-content;
+}
+
+/* INDEX */
+
+.index {
+    display: block;
+    margin: 70px 10vw;
+    justify-items: center;
+    text-align: center;
+}
+
+.index-year {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+}
+
+.index-row {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    justify-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.15s ease-in-out;
+
+}
+
+.index-row:hover {
+    background-color: rgba(245, 245, 245, 1);
+    border-radius: 10px;
+    transition: 0.15s ease-in-out;
+}
+
+.index-row a {
+    position: absolute;
+    display: flex;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.index-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 70px;
+}
+
+.index-date {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    width: 50px;
+}
+
+.index-hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(235, 235, 235);
+}
+
+@media (max-width: 720px) {
+    .index {
+        margin: 50px 5vw;
+    }
+
+    .index-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+}
+
+/* POEMS */
+
+.poem {
+    display: block;
+    margin: 70px 10vw;
+}
+
+.poem-text {
+    margin: 50px 0;
+}
+
+.poem-two {
+    column-count: 2;
+    column-gap: 50px;
+}
+
+.poem-three {
+    column-count: 3;
+    column-gap: 30px;
+}
+
+.poem-rule {
+    display: block;
+    margin: 70px 10vw;
+    width: 1fr;
+    height: 1px;
+    background-color: rgb(235, 235, 235);
+}
+
+@media (max-width: 720px) {
+
+    .poem {
+        margin: 50px 5vw;
+    }
+    .poem-text {
+        margin: 25px 0;
+    }
+    .poem-two {
+        column-count: 1;
+    }
+    .poem-three {
+        column-count: 1;
+    }
+    .poem-rule {
+        margin: 50px 5vw;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    box-sizing: border-box;
+    width: 1fr;
+    height: fit-content;
+    background-color: rgba(245, 245, 245, 1);
+    margin: 10px;
+    padding: 40px 20px 35px 20px;
+    justify-content: center;
+    align-items: end;
+    border-radius: 5px;
+}
+
+.footer-date {
+    height: fit-content;
+    flex-grow: 1;
+
+}
+
+.footer-date p{
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.footer-link {
+    height: fit-content;
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-link p{
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.footer-middle {
+    text-align: center;
+    height: fit-content;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.footer-middle p{
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    margin: 20px;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .footer-middle p{
+        margin: 15px;
+    }
+
+    .footer-link {
+        margin-top: 35px;
+    }
+}
